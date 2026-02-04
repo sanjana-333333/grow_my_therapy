@@ -1,6 +1,8 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--color-bg)]">
+      
+
       {/* HERO SECTION */}
       <section className="min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -154,10 +156,11 @@ export default function Home() {
     {/* RIGHT IMAGE */}
     <div>
       <img
-        src="/images/fulfill.jpg"
-        alt="Calm therapy office in Santa Monica"
-        className="rounded-2xl w-full h-[420px] object-cover"
-      />
+  src="/images/fulfill.jpg"
+  alt="Calm therapy office in Santa Monica"
+  className="rounded-2xl w-full h-[420px] object-cover"
+/>
+
     </div>
 
   </div>
