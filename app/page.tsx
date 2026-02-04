@@ -1,134 +1,178 @@
 export default function Home() {
   return (
-    <main className="min-h-screen">
-
+    <main className="min-h-screen bg-[var(--color-bg)]">
       {/* HERO SECTION */}
-      <section className="min-h-screen flex items-center justify-center bg-neutral-50">
-        <div className="max-w-3xl text-center px-6">
+      <section className="min-h-screen flex items-center">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
-          <h1 className="text-5xl font-semibold mb-6">
-            Therapy for Anxiety & Trauma in Santa Monica, CA
-          </h1>
+          {/* LEFT CONTENT */}
+          <div>
+            <h1 className="text-5xl md:text-6xl leading-tight text-[var(--color-primary)]">
+              Therapy for Anxiety,<br />
+              Trauma & Burnout in<br />
+              Santa Monica, CA
+            </h1>
 
-          <p className="text-lg text-neutral-600 mb-8">
-            Compassionate, evidence-based therapy for adults navigating anxiety,
-            trauma, burnout, and chronic stress.
-          </p>
+            <p className="mt-6 max-w-xl text-lg text-[var(--color-primary)]">
+              Thoughtful, evidence-based therapy for adults navigating anxiety,
+              chronic stress, and the lasting impact of past experiences.
+            </p>
 
-          <button className="px-8 py-3 bg-black text-white rounded-full text-base">
-            Schedule a Consultation
-          </button>
-
-        </div>
-      </section>
-            {/* SERVICES SECTION */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-3xl font-semibold text-center mb-16">
-            Areas of Focus
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-12">
-
-            <div className="border p-8 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">
-                Anxiety & Panic Therapy
-              </h3>
-              <p className="text-neutral-600">
-                Support for chronic worry, panic attacks, and nervous system
-                overwhelm.
-              </p>
-            </div>
-
-            <div className="border p-8 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">
-                Trauma & EMDR Therapy
-              </h3>
-              <p className="text-neutral-600">
-                Trauma-informed care for single-incident and complex trauma.
-              </p>
-            </div>
-
-            <div className="border p-8 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">
-                Burnout & High-Achiever Stress
-              </h3>
-              <p className="text-neutral-600">
-                Therapy for professionals experiencing burnout, perfectionism,
-                and emotional exhaustion.
-              </p>
-            </div>
-
+            <button className="mt-8 border border-[var(--color-primary)] px-8 py-3 text-sm uppercase tracking-wide hover:bg-[var(--color-primary)] hover:text-white transition">
+              Schedule a Consultation →
+            </button>
           </div>
-        </div>
 
-      </section>
-            {/* ABOUT SECTION */}
-      <section className="py-24 bg-neutral-50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-
-          <h2 className="text-3xl font-semibold mb-8">
-            About Dr. Maya Reynolds, PsyD
-          </h2>
-
-          <p className="text-neutral-700 leading-relaxed mb-6">
-            Dr. Maya Reynolds is a licensed clinical psychologist based in
-            Santa Monica, California. She works with adults who feel overwhelmed
-            by anxiety, stress, trauma, or burnout—often appearing high-functioning
-            on the outside while struggling internally.
-          </p>
-
-          <p className="text-neutral-700 leading-relaxed">
-            Her approach is warm, collaborative, and grounded in evidence-based
-            practices including CBT, EMDR, mindfulness, and body-oriented
-            techniques. Therapy is paced carefully, with an emphasis on safety,
-            regulation, and long-term healing.
-          </p>
-
-        </div>
-      </section>
-            {/* OUR OFFICE SECTION */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-3xl font-semibold text-center mb-12">
-            Our Office
-          </h2>
-
-          <p className="max-w-3xl mx-auto text-center text-neutral-600 mb-16">
-            Located in Santa Monica, our therapy office is a calm, private space
-            designed to help you feel safe, grounded, and at ease. Natural light,
-            warm textures, and a quiet environment support in-person sessions.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-10">
+          {/* RIGHT IMAGE */}
+          <div className="flex justify-center">
             <img
-  src="/office1.jpeg"
-  alt="Therapy office interior"
-  className="rounded-lg object-cover w-full h-80 shadow-sm"
-/>
-
-<img
-  src="/office2.jpeg"
-  alt="Counseling room in Santa Monica"
-  className="rounded-lg object-cover w-full h-80 shadow-sm"
-/>
-
+              src="/images/hero.jpg"
+              alt="Therapy office in Santa Monica"
+              className="w-[420px] h-[420px] object-cover rounded-full"
+            />
           </div>
-
-          <p className="text-center text-sm text-neutral-500 mt-8">
-            In-person sessions available in Santa Monica, CA. Secure telehealth
-            options are also offered for clients across California.
-          </p>
 
         </div>
       </section>
+      {/* SECOND SECTION */}
+<section className="py-24">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    {/* LEFT TEXT */}
+    <div>
+      <h2 className="text-4xl md:text-5xl mb-6">
+        Live a fulfilling life.
+      </h2>
+
+      <p className="mb-4 text-lg max-w-lg">
+        Life can feel overwhelming—especially when you’re balancing
+        personal relationships, work stress, and emotional exhaustion.
+      </p>
+
+      <p className="mb-8 text-lg max-w-lg">
+        Therapy offers a supportive space to slow down, reflect, and
+        build healthier ways of coping and connecting.
+      </p>
+
+      <button className="border border-[var(--color-primary)] px-6 py-3 text-sm uppercase tracking-wide hover:bg-[var(--color-primary)] hover:text-white transition">
+        Get in touch →
+      </button>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div>
+      <img
+  src="/images/fulfill.jpg"
+  alt="Calm therapy space"
+  className="w-full h-[420px] rounded-2xl object-cover"
+/>
+
+
+    </div>
+    {/* MY SPECIALTIES SECTION */}
+<section className="py-24 bg-[var(--color-bg)]">
+  <h2 className="text-4xl font-serif text-center mb-12">
+    My Specialties
+  </h2>
+
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+
+    <div className="border rounded-xl p-6 text-center">
+      <h3 className="text-2xl font-serif mb-4">Anxiety Therapy</h3>
+      <p className="text-sm">
+        Support for constant worry, overthinking, panic, and feeling emotionally overwhelmed.
+      </p>
+    </div>
+
+    <div className="border rounded-xl p-6 text-center">
+      <h3 className="text-2xl font-serif mb-4">Trauma Recovery</h3>
+      <p className="text-sm">
+        Trauma-informed therapy focused on safety, stabilization, and emotional regulation.
+      </p>
+    </div>
+
+    <div className="border rounded-xl p-6 text-center">
+      <h3 className="text-2xl font-serif mb-4">Burnout & Stress</h3>
+      <p className="text-sm">
+        Therapy for work stress, perfectionism, emotional exhaustion, and chronic pressure.
+      </p>
+    </div>
+
+  </div>
+</section>
+{/* ABOUT SECTION */}
+<section className="py-24 bg-[var(--color-bg)]">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+
+    <h2 className="text-4xl font-serif mb-8">
+      About Dr. Maya Reynolds, PsyD
+    </h2>
+
+    <p className="mb-6 text-lg">
+      I’m a licensed clinical psychologist based in Santa Monica, California,
+      offering therapy for adults who feel overwhelmed by anxiety, stress,
+      and the lingering effects of past experiences.
+    </p>
+
+    <p className="mb-6">
+      My work focuses on anxiety, trauma, burnout, and chronic stress.
+      Many of my clients are thoughtful, high-achieving individuals who
+      appear “functional” on the outside but feel exhausted, stuck,
+      or emotionally on edge internally.
+    </p>
+
+    <p>
+      I take a warm, collaborative, and grounded approach to therapy,
+      integrating evidence-based methods like CBT, EMDR,
+      mindfulness-based practices, and body-oriented techniques.
+    </p>
+
+  </div>
+</section>
+{/* OUR OFFICE SECTION */}
+<section className="py-24 bg-[var(--color-bg)]">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    {/* LEFT TEXT */}
+    <div>
+      <h2 className="text-4xl font-serif mb-6">
+        A Calm Space for Healing
+      </h2>
+
+      <p className="mb-4">
+        My Santa Monica office is a quiet, private space designed to help
+        clients feel grounded, safe, and at ease from the moment they arrive.
+      </p>
+
+      <p>
+        The space is filled with natural light, comfortable seating, and a
+        calming atmosphere that supports reflection, emotional safety,
+        and meaningful therapeutic work.
+      </p>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div>
+      <img
+        src="/images/fulfill.jpg"
+        alt="Calm therapy office in Santa Monica"
+        className="rounded-2xl w-full h-[420px] object-cover"
+      />
+    </div>
+
+  </div>
+</section>
 
 
 
+
+  </div>
+</section>
+
+       
+
+  
 
     </main>
   );
 }
-
